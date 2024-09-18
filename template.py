@@ -38,7 +38,7 @@ for filepath in list_of_files:
         logging.info(f"Created directory: {filedir} for the file name {filename}")
 
     #for creating filename
-    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) ==0): #if filepath (filename) is not exist or size of the file is zero. 
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) ==0 ): #if filepath (filename) is not exist or size of the file is zero. 
         # then only created the file if file is already present and contain some code then the file is not created
         # neither i lose my code inside the file if it is empty then it will replaced
         with open(filename, 'w') as f:
